@@ -1,0 +1,24 @@
+
+.navbar-nav .nav-link:hover {
+    border-bottom: 2px solid #8b4513;
+    color: #8b4513;
+    font-weight: bold;
+  }
+
+  .navbar-nav .nav-link{
+    text-transform: uppercase;
+  }
+
+  .navbar{
+    border-top: 2px solid white
+  }
+
+  .contact{
+    border: 2px solid white;
+  }
+
+  .contact:hover{
+    border: 2px solid #8b4513!important;
+    font-weight: normal!important;
+    background-color: #8b4513!important;
+  }
