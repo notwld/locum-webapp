@@ -13,12 +13,16 @@ import team4 from "../assets/team/team-memb4.jpg";
 
 
 import "../stylesheets/home.css"
-import Grid from "../components/Grid";
+import Grid from "../components/FeatureGrid";
 
 import { faHospital, faUserMd, faMedkit } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faTwitter, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+
 import Banner from "../components/Banner";
 import Container from "../components/Container";
 import TeamGrid from "../components/TeamGrid";
+import SocialGrid from "../components/SocialGrid";
+
 
 const sliderObj = [
     {
@@ -50,15 +54,16 @@ const features = [
         caption: "Our solutions are trusted by some of the world's largest organizations. We provide highly trained individuals who support you when all else fails.",
     },
     {
-        icon: faUserMd,
-        heading: "Tailored Outsourcing",
-        caption: "We believe in providing innovative, tailored solutions for our clients. Our technology-driven consultancy can provide anything you need.",
-    },
-    {
         icon: faMedkit,
         heading: "Global Reach",
         caption: "Our capabilities stretch across 5 time zones. We work with clients ranging from global pharmacies to chemical manufacturers and pharmaceutical firms.",
+    },
+    {
+        icon: faUserMd,
+        heading: "Tailored Outsourcing",
+        caption: "We believe in providing innovative, tailored solutions for our clients. Our technology-driven consultancy can provide anything you need.",
     }
+    
 ];
 
 const containerContent = {
@@ -95,6 +100,29 @@ const teamContent = [
     },
 ]
 
+const accounts = [
+    {
+        icon: faFacebook,
+        caption: "Facebook",
+        link: "https://www.facebook.com/locumforce",
+    },
+    {
+        icon: faTwitter,
+        caption: "Twitter",
+        link: "https://twitter.com/locumforce",
+    },
+    {
+        icon: faInstagram,
+        caption: "Instagram",
+        link: "https://www.instagram.com/locumforce/",
+    },
+    {
+        icon: faLinkedin,
+        caption: "Linkedin",
+        link: "https://www.linkedin.com/company/locumforce/",
+    },
+
+]
 
 
 export default function Home() {
@@ -108,7 +136,7 @@ export default function Home() {
             <div className="container-fluid px-0 mx-0">
                 <Container content={containerContent} />
             </div>
-            <div className="container-fluid py-4 px-0 mx-0 my-5">
+            <div className="container-fluid pt-4 px-0 mx-0 my-5">
                 <h2 className="text-center" >
                     Meet our Team
                 </h2>
@@ -116,6 +144,10 @@ export default function Home() {
                     Here are our innovative and experienced team members
                 </p>
                 <TeamGrid teamContent={teamContent} />
+            </div>
+            <div className="container-fluid py-2 px-0 mx-0 my-5">
+                <Banner text="#Find Us" />
+                <SocialGrid accounts={accounts} />
             </div>
         </div>
     )

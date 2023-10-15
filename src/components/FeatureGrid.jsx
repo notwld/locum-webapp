@@ -1,4 +1,4 @@
-import GridItem from './GridItem';
+import GridItem from './FeatureGridItem';
 import PropTypes from 'prop-types';
 
 export default function Grid({ features }) {

@@ -29,7 +29,7 @@ export default function Carousel({ sliderObj }) {
             <img src={item.img} className="d-block w-100 carousel-img" alt="..."/>
             <div className="carousel-caption d-md-block">
               <div className="overlay"></div>
-              <h5>{item.heading}</h5>
+              <h3>{item.heading}</h3>
               <p>{item.caption}</p>
             </div>
           </div>

@@ -7,8 +7,8 @@ export default function Container({ content }) {
             <div className="col">
                 <img src={content.image} alt="" className="d-block w-70 img-fluid" />
             </div>
-            <div className="col d-flex flex-column justify-content-center align-items-start">
-                <h1 className='py-3' style={{color:"white"}}>{content.heading}</h1>
+            <div className="col d-flex flex-column justify-content-center align-items-center">
+                <h1 className='py-3' style={{color:"white",textAlign:"left!important"}}>{content.heading}</h1>
                 <p style={{color:"white"}}>{content.caption}</p>
                 <button className="btn btn-primary my-3 px-4 py-2" style={{backgroundColor:"#1e90cf",border:"none"}}>Register Now
                 </button>
