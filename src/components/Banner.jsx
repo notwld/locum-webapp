@@ -1,6 +1,8 @@
 
 import PropTypes from 'prop-types';
 import img from "../assets/slider/slider_2.jpg"
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 
 const style = {
@@ -21,16 +23,19 @@ const overlay = {
     left: "0",
     height: "160px",
     width: "100%",
-    backgroundColor:"rgba(153, 204, 67, 0.7)",
     zIndex: 99,
 }
 
 
 
 export default function Banner({text}) {
+    const [path,setPath] = useState("home");
+    useEffect(() => {
+        setPath(window.location.pathname.split("/")[1])
+    }, [])
     return (
         <div className="container-fluid d-flex justify-content-center align-items-center text-center" style={style}>
-            <div style={overlay}></div>
+            <div style={{...overlay, backgroundColor: path === "" ? "rgba(153, 204, 67, 0.7)" : "rgb(30, 144, 207,0.7)"}}></div>
             <h1 className='text-center' style={{color:"white",zIndex:9999}}>{text}</h1>
         </div>
     )

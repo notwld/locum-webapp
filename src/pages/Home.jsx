@@ -16,7 +16,6 @@ import "../stylesheets/home.css"
 import Grid from "../components/FeatureGrid";
 
 import { faHospital, faUserMd, faMedkit } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faTwitter, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 import Banner from "../components/Banner";
 import Container from "../components/Container";
@@ -100,29 +99,6 @@ const teamContent = [
     },
 ]
 
-const accounts = [
-    {
-        icon: faFacebook,
-        caption: "Facebook",
-        link: "https://www.facebook.com/locumforce",
-    },
-    {
-        icon: faTwitter,
-        caption: "Twitter",
-        link: "https://twitter.com/locumforce",
-    },
-    {
-        icon: faInstagram,
-        caption: "Instagram",
-        link: "https://www.instagram.com/locumforce/",
-    },
-    {
-        icon: faLinkedin,
-        caption: "Linkedin",
-        link: "https://www.linkedin.com/company/locumforce/",
-    },
-
-]
 
 
 export default function Home() {
@@ -147,7 +123,9 @@ export default function Home() {
             </div>
             <div className="container-fluid py-2 px-0 mx-0 my-5">
                 <Banner text="#Find Us" />
-                <SocialGrid accounts={accounts} />
+                <div className="my-3">
+                <SocialGrid />
+                </div>
             </div>
         </div>
     )

@@ -5,6 +5,9 @@ import "/node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import Home from './pages/Home.jsx'
+import About from './pages/About.jsx'
+import Contact from './pages/Contact.jsx'
+import Jobs from './pages/Jobs.jsx'
 const routes = createBrowserRouter(
   [
     {
@@ -14,7 +17,19 @@ const routes = createBrowserRouter(
         {
           path: '/',
           element: <Home />,
-        }
+        },
+        {
+          path: '/about',
+          element: <About />
+        },
+        {
+          path: '/contact',
+          element: <Contact />
+        },
+        {
+          path: '/jobs',
+          element: <Jobs />
+        },
       ]
     },
     

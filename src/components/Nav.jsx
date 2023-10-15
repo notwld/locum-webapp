@@ -41,17 +41,17 @@ export default function Navbar() {
                 </Link>
             </li>
             <li className="nav-item mx-3">
-                <Link className={`nav-link ${scroll ? 'text-black' : ''}`} to="#">
+                <Link className={`nav-link ${scroll ? 'text-black' : ''}`} to="/about">
                     About Us
                 </Link>
             </li>
             <li className="nav-item mx-3">
-                <Link className={`nav-link ${scroll ? 'text-black' : ''}`} to="/menu">
+                <Link className={`nav-link ${scroll ? 'text-black' : ''}`} to="/jobs">
                     Jobs
                 </Link>
             </li>
             <li className="nav-item mx-3">
-                <Link className={`nav-link ${scroll ? 'text-black' : 'contact'}`} to="contact-us">
+                <Link className={`nav-link ${scroll ? 'text-black' : 'contact'}`} to="contact">
                     Contact Us
                 </Link>
             </li>
