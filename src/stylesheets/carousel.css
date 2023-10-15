@@ -1,0 +1,32 @@
+.carousel-img {
+    object-fit: cover;
+    height: 100vh!important;
+    width: 100%;
+    z-index: 0;
+}
+
+.carousel-img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh!important;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.carousel-img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh!important;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+
+
+
+

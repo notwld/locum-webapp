@@ -4,6 +4,7 @@ import App from './App.jsx'
 import "/node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+import Home from './pages/Home.jsx'
 const routes = createBrowserRouter(
   [
     {
@@ -11,6 +12,8 @@ const routes = createBrowserRouter(
       element: <App />,
       children: [
         {
+          path: '/',
+          element: <Home />,
         }
       ]
     },

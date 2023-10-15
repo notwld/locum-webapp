@@ -1,0 +1,12 @@
+.link{
+    background-color: rgba(0, 0, 0, 0.539);
+    color: white;
+    text-decoration: none;
+    text-align: justify;
+    border-radius: 12px;
+}
+
+.link a{
+    color: white;
+    text-decoration: none;
+}
