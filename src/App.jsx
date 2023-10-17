@@ -9,7 +9,7 @@ const about =
 const contact = {
   address: "208 Roundhay Road, Leeds, LS8 5AA",
   phone: "+44 7578617902",
-  email: ""
+  email: "admin@locumforce.co.uk"
 }
 
 

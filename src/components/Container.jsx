@@ -1,5 +1,6 @@
 
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 export default function Container({ content }) {
     return (
@@ -10,8 +11,8 @@ export default function Container({ content }) {
             <div className="col d-flex flex-column justify-content-center align-items-center">
                 <h1 className='py-3' style={{color:"white",textAlign:"left!important"}}>{content.heading}</h1>
                 <p style={{color:"white"}}>{content.caption}</p>
-                <button className="btn btn-primary my-3 px-4 py-2" style={{backgroundColor:"#1e90cf",border:"none"}}>Register Now
-                </button>
+                <Link className="btn btn-primary my-3 px-4 py-2" style={{backgroundColor:"#1e90cf",border:"none"}} to={"/contact"}>Register Now
+                </Link>
             </div>
         </div>
     );
