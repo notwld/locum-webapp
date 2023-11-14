@@ -60,6 +60,7 @@ export default function Contact() {
                 <img src={map} alt="Picture" />
               </div>
             </div>
+            <h2 className="text-center">Any Query? Leave us a message</h2>
             <Form />
           </div>
         </div>
